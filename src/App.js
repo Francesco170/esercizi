@@ -1,12 +1,12 @@
 import React from "react";
-import { Func } from "./Function";
+import { Sum } from "./Sum";
 
 export class App extends React.Component{
   
  render(){
    return(
-       <div> 
-  <Func />
+       <div>  
+  <Sum />
   </div>
    )
 }
