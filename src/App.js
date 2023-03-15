@@ -4,6 +4,7 @@ export class App extends React.Component{
    render(){
     return(
         <>
-       <Welcome name="francesco" />
+       <Welcome name/>
+      
     </>)
 }}
