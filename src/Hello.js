@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Message } from "./Message";
 
 
 export class Hello extends React.Component{
@@ -7,7 +7,7 @@ export class Hello extends React.Component{
         return(
      <>
         <h1>"Hello, World!"</h1>
-        <p>"What a beautiful day!"</p>
+        <Message />
         </>
         )
     }
