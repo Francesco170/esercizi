@@ -6,7 +6,8 @@ export class Welcome extends React.Component{
    return (
     <>
     <p> "Welcome, {nome}" </p>
-     <Age age={ 19 }/>
+        <Age age={ 19 }/>
+        
     </>
     )
 }}
