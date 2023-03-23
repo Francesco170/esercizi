@@ -5,7 +5,7 @@ export class App extends React.Component{
       
     return(
         <>
-       <Welcome />
+       <Welcome name="John"/>
       
     </>)
 }}
