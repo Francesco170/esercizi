@@ -4,10 +4,10 @@ export class Age extends React.Component{
     return(
         <>
         
-        { this.props.age >18 && this.props.age<65 
+        { this.props.age >18 
         ?<p>" your age is {this.props.age} "</p>
         
-        :null} 
+        :<p>"You are very young!"</p>} 
 
     
         </>
