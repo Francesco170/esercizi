@@ -1,7 +1,6 @@
 import React from "react";
-
-
 export class Login extends React.Component{
+  
     state = {
         username:"",
         password:"",
@@ -33,17 +32,17 @@ export class Login extends React.Component{
         })
      }
 
-   
+ 
    
     render(){
             
     return(
         <>
-          
+             
             <input name="username"   onChange={this.EventHandler} value={this.state.username}/>  
             <input name="password" type="password"  onChange={this.PasswordHandler} value={this.state.password}/> 
             <input name=" remember" type="checkbox" onChange={ this.CheckHandler} checked={this.state.check} /> 
-                  
+              <button name="login"    disabled={!this.state.username && !this.state.password}>Login</button>    
         </>
     )
 }
