@@ -32,8 +32,13 @@ export class Login extends React.Component{
         })
      }
 
- 
-   
+   resetHandler=()=>{
+   this.setState({
+    username:"",
+    password:"",
+    remember:false,
+   })
+   }   
     render(){
             
     return(
@@ -41,8 +46,9 @@ export class Login extends React.Component{
              
             <input name="username"   onChange={this.EventHandler} value={this.state.username}/>  
             <input name="password" type="password"  onChange={this.PasswordHandler} value={this.state.password}/> 
-            <input name=" remember" type="checkbox" onChange={ this.CheckHandler} checked={this.state.check} /> 
+            <input name="remember" type="checkbox" onChange={ this.CheckHandler} checked={this.state.remember} /> 
               <button name="login"    disabled={!this.state.username && !this.state.password}>Login</button>    
+              <button name=" reset" onClick={this.resetHandler}> reset</button>
         </>
     )
 }
