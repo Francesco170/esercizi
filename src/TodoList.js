@@ -1,7 +1,3 @@
-//non so perchè ma il nome non viene aggiunto subito, viene aggiunto dopo aver cliccato il bottone ed aver riscritto una lettera nel campo input
-
-
-
 import React from "react";
 export class TodoList extends React.Component{
     state = {
@@ -9,17 +5,23 @@ export class TodoList extends React.Component{
     }
 
     EventHandler = (event) => {
-       const value = event.target.value
+        const value = event.target.value
+        
+        this.setState({
+        input : value
+    })
+}
 
-       this.setState({
-       input : value
-       })
-    }
 
 
-
-    buttonhandler=()=>{
-      this.items= this.props.name.push(this.state.input)
+buttonhandler=(event)=>{
+    this.items= this.props.name.push(this.state.input)
+      
+    const value = event.target.value
+        
+    this.setState({
+    input : value
+})
       
     }
     render(){
