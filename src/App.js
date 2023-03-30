@@ -4,6 +4,6 @@ export class App extends React.Component{
    render(){
       
     return(
-        <Container/>
+        <Container child={<p>this is a child</p>}/>
     )
 }}
