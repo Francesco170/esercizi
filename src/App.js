@@ -4,6 +4,7 @@ export class App extends React.Component{
    render(){
       
     return(
-        <Container/>
+        <Container title={<h1>this is a title</h1>} 
+        child={<p>this is a child</p>}/>
     )
 }}
